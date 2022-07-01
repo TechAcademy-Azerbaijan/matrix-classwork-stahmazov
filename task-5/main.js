@@ -8,3 +8,16 @@ let matrix = [
 ];
 
 // Write code here. 
+let f_sum = 0
+let l_sum = 0
+
+for (let i = 0; i < matrix.length; i++){
+    f_sum += matrix[i][i]
+    
+}
+
+for (let i = matrix.length - 1; i >= 0; i--){
+    l_sum+=matrix[matrix.length-1 - i][i]
+}
+
+console.log(f_sum, l_sum)
