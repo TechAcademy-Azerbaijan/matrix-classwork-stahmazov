@@ -9,7 +9,6 @@ let warning = []
 for (let i = 0; i < array.length; i++){
     start = i + 1
     last = array.length+1
-    console.log(start, last)
     if (!array.slice(start,last).includes(array[i]) && !warning.includes(array[i])) {
         new_arr.push(array[i])
     }
